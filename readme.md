@@ -1,27 +1,49 @@
-# Web Catalog of Projects on the Laravel PHP Framework
+## Web Catalog of Projects on the Laravel PHP framework ##
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+### Description ###
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+VSproj is project of the web digital catalog builded on the Laravel 5 PHP framework and based on the tutorial application [Laravel 5 example](https://github.com/bestmomo/laravel5-example/). 
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+### Installation ###
 
-## Official Documentation
+* `git clone https://github.com/vskrip/vsproj.git localprojectname`
+* `cd localprojectname`
+* `composer install`
+* `php artisan key:generate`
+* Create a database and inform *.env*
+* `php artisan migrate --seed` to create and populate tables
+* Inform *config/mail.php* for email sends
+* `php artisan vendor:publish` to publish filemanager
+* `php artisan serve` to start the app on http://localhost:8000/
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+### Features ###
 
-## Contributing
+* Home page
+* Custom Error Page 404
+* Authentication (registration, login, logout, password reset, mail confirmation, throttle)
+* Users roles : administrator (all access), redactor (create and edit post, upload and use medias in personnal directory), and user (create comment in blog)
+* Blog with comments
+* Search in posts
+* Tags on posts
+* Contact us page
+* Admin dashboard with new messages, users, posts and comments
+* Users admin (roles filter, show, edit, delete, create)
+* Messages admin
+* Posts admin (list with dynamic order, show, edit, delete, create)
+* Medias gestion
+* Localisation
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+### Include ###
 
-## Security Vulnerabilities
+* [HTML5 Boilerplate](http://html5boilerplate.com) for front architecture
+* [Bootstrap](http://getbootstrap.com) for CSS and jQuery plugins
+* [Font Awesome](http://fortawesome.github.io/Font-Awesome) for the nice icons
+* [Highlight.js](https://highlightjs.org) for highlighting code
+* [Startbootstrap](http://startbootstrap.com) for the free templates
+* [CKEditor](http://ckeditor.com) the great editor
+* [Filemanager](https://github.com/simogeo/Filemanager) the easy file manager
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+### Packages included ###
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+* laravelcollective/html
+* bestmomo/filemanager
