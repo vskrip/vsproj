@@ -1,14 +1,14 @@
 {
-    "name": "vskrip/vsproj",
-    "description": "Web Catalog of Projects.",
-    "keywords": ["web", "catalog", "laravel"],
+    "name": "laravel/laravel",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
         "laravelcollective/html": "5.2.*",
-        "bestmomo/filemanager": "1.1.*"        
+        "bestmomo/filemanager": "1.1.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -21,7 +21,6 @@
         "classmap": [
             "database"
         ],
-        // TODO: Exclude the option if helpers will be not need
         "files": [
             "app/helpers.php"
         ],
@@ -54,3 +53,4 @@
         "preferred-install": "dist"
     }
 }
+
